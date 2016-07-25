@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: auto;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  /*line-height: 30px;*/
+  color: #777;
+  background: #00233c;
+}
+ /* ici si padding => responsive => media queries */
+.container {
+  /*background-color: grey;*/
+  max-width: 500px;
+  width: 100%;
+  margin:auto;
+}
+
+.containerdebug {
+  width: 150%;
+  margin:auto;
+  border: 1px solid red;
+}
+
+.containerdebug {
+  width: 150%;
+  margin:auto;
+  border: 1px solid orange;
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+
+header img {
+   margin: 0 auto;
+   text-align: center;
+   margin-left: 25%;
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+/* largeur et hauteur des champs */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+/*#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,*/
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submitnew"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #f8a800;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submitedit"] { /* here submit motiie pr le cas edit */
+  cursor: pointer;
+  float: right;
+  width: 47%;
+  border: none;
+  background: #f8a800;
+  color: white;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  margin: 1%;
+}
+
+#contact button[type="submitcancel"]{ /* here submit motiie pr le cas edit */
+  cursor: pointer;
+  float: left;
+  width: 47%;
+  border: none;
+  background: white;
+  color: #f8a800;
+  border: 1px solid #f8a800;
+  margin: 0 0 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  margin: 1%;
+}
+
+/*hover du submit */
+#contact button[type="submit"]:hover {
+  background: #8791b0;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+/* //////////// animation ////////// */
+
+.brand h2 {
+  color: blue;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.line_top {
+  width: 300px;
+  height: 3px;
+  background-color: red;
+  -webkit-animation: line_top s linear forwards;
+  animation: line_top 2s linear forwards;
+  /*forwards pr le stop*/
+
+  -webkit-animation: line_top 2s linear forwards;
+    -moz-animation: line_top 2s linear forwards;
+     -ms-animation: line_top 2s linear forwards;
+      -o-animation: line_top 2s linear forwards;
+         animation: line_top 2s linear forwards; /* this comes last => rappelle les regles generales de l'animation   */
+ }
+
+ /*ici refaire pr les browers */
+
+@-moz-keyframes line_top {
+   from {
+     width: 0px;
+   }
+   to {
+     width: 300px;
+     background-color: red;
+   }
+
+ }
+
+ @-webkit-keyframes line_top {
+   from {
+     width: 0px;
+   }
+   to {
+     width: 300px;
+     background-color: red;
+   }
+ }
+
+ @-o-keyframes aia2{
+   from {
+     width: 0px;
+   }
+   to {
+     width: 300px;
+     background-color: red;
+   }
+ }
+
+
+
+
+/* standard synthaxe */
+@keyframes line_top {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
+    background-color: red;
+  }
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+
+/*-----bottom ----------------------------------*/
+
+.line_bottom {
+  float: right;
+  width: 300px;
+  height: 3px;
+  background-color: red;
+
+  -webkit-animation: line_bottom 2s linear forwards;/*forwards pr le stop => stop a la derniere iteration*/
+   -moz-animation: line_bottom 2s linear forwards;
+    -ms-animation: line_bottom 2s linear forwards;
+     -o-animation: line_bottom 2s linear forwards;
+        animation: line_bottom 2s linear forwards; /* this comes last => rappelle les regles generales de l'animation   */
+}
+
+
+@-webkit-keyframes line_bottom {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
+    background-color: red;
+  }
+}
+
+@keyframes line_bottom {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
+    background-color: red;
+  }
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
